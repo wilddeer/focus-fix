@@ -3,6 +3,7 @@
     var mouseFocusedClass = 'is-mouse-focused';
 
     $(document.body).on('mousedown', function(event) {
+        //wait for `document.activeElement` to change
         setTimeout(function() {
             //find focused element
             var activeElement = document.activeElement,
