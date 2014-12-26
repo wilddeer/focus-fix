@@ -2,7 +2,7 @@
 (function() {
     var mouseFocusedClass = 'is-mouse-focused';
     
-    document.body.addEventListener('mousedown', function(event) {
+    document.body.addEventListener('mousedown', function() {
         //wait for `document.activeElement` to change
         setTimeout(function() {
             //find focused element
