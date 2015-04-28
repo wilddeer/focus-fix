@@ -12,7 +12,7 @@
             //if found and it's not body...
             if (activeElement && activeElement !== document.body) {
                 //add special class, remove it after `blur`
-                $activeElement.addClass(mouseFocusedClass).one('blur', function() {
+                $activeElement.addClass(mouseFocusedClass).on('blur', function() {
                     $activeElement.removeClass(mouseFocusedClass);
                 });
             }
